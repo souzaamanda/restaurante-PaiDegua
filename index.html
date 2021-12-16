@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Pai D'égua</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- MAX CDN Bootsrap 4 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- CDN Icones Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top p-0 pl-3">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                   <a href="#" class="nav-link">HOME</a> 
+                </li>
+                <li class="nav-item">
+                   <a href="#cardapio" class="nav-link">CARDÁPIO</a> 
+                </li>
+                <li class="nav-item">
+                   <a href="#sobre"class="nav-link">SOBRE</a> 
+                </li>
+                <li class="nav-item">
+                   <a href="#contato"class="nav-link">CONTATO</a> 
+                </li>
+            </ul>   
+        </nav>
+
+        <div class="d-flex flex-column justify-content-center text-center text-white bg-imagem">
+            <p>DELÍCIAS DO PARÁ</p>
+            <div>
+                <a href="#contato" class="btn btn-dark btn-lg border-white rounded p-3 font-weight-bold">Faça sua reserva !!</a>
+            </div>              
+        </div>       
+    </header>
+
+    <main>
+        <div class="container-fluid p-3 bg-dark text-white">
+            <h2 id="cardapio">CARDÁPIO</h2>
+
+            <div class="container pt-3 w-75">   
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs bg-dark d-flex">
+                    <li class="nav-item etiqueta-cardapio flex-fill">
+                        <a class="nav-link active" data-toggle="tab" href="#refeicao">Refeições</a>
+                    </li>
+                    <li class="nav-item etiqueta-cardapio flex-fill">
+                        <a class="nav-link" data-toggle="tab" href="#petisco">Petisco</a>
+                    </li>
+                    <li class="nav-item etiqueta-cardapio flex-fill">
+                        <a class="nav-link" data-toggle="tab" href="#sobremesa">Sobremesa</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane container active bg-light" id="refeicao">
+                        <h3 class="pt-3">
+                            <b class="text-body">Pato no Tucupi</b>
+                            <span class="float-right bg-secondary rounded-lg">R$ 20,00</span>
+                        </h3>
+                        <p class="text-body">Constituído de pato, tucupi (caldo amarelo extraído da mandioca) e jambu.</p>
+                        <hr>
+                        <h3 class="pt-3">
+                            <b class="text-body">Maniçoba</b>
+                            <span class="float-right bg-secondary rounded-lg">R$ 20,00</span>
+                        </h3>
+                        <p class="text-body">As folhas da planta maniva ou da mandioca se transformam numa das mais exóticas iguarias da culinária paraense. <br>Charque, chouriço português, paio, pé de porco, toucinho, costela também compõe o prato.</p>
+                        <hr>
+                        <h3 class="pt-3">
+                            <b class="text-body">Tacacá</b>
+                            <span class="float-right bg-secondary rounded-lg">R$ 10,00</span>
+                        </h3>
+                        <p class="text-body"> Leva tucupi, goma de tapioca cozida, jambu e camarão seco.</p>
+                        <hr>
+                        <h3 class="pt-3">
+                            <b class="text-body">Caldeirada de Filhote</b>
+                            <span class="float-right bg-secondary rounded-lg">R$ 35,00</span>
+                        </h3>
+                        <p class="text-body"> O “filhote” é um peixe de pele encontrado em abundância na confluência dos grandes rios.</p>
+                        <hr>
+                    </div>
+                    <div class="tab-pane container fade bg-light" id="petisco">
+                        <h3 class="pt-3">
+                            <b class="text-body">Isca de Pirarucu Frito</b>
+                            <span class="float-right bg-secondary rounded-lg">R$ 15,00</span>
+                        </h3>
+                        <p class="text-body">O pirarucu é um dos maiores peixes de água doce do planeta. Nativo da Amazônia.</p>
+                        <hr>
+                        <h3 class="pt-3">
+                            <b class="text-body">Bolinho de Piracuí</b>
+                            <span class="float-right bg-secondary rounded-lg">R$ 13,00</span>
+                        </h3>
+                        <p class="text-body"> feito a partir da farinha de peixe ou piracuí. Iguaria obtida da moagem do peixe seco, principalmente de piraíbas e piraras, peixes de grande porte dos rios da Amazônia</p>
+                        <hr>
+                        <h3 class="pt-3">
+                            <b class="text-body">Unha de Caranguejo</b>
+                            <span class="float-right bg-secondary rounded-lg">R$ 7,00</span>
+                        </h3>
+                        <p class="text-body">Um estilo de coxinha recheada com caranguejo</p>
+                        <hr>
+                    </div>
+                    <div class="tab-pane container fade bg-light" id="sobremesa">
+                        <h3 class="pt-3">
+                            <b class="text-body">Porção de Açaí</b>
+                            <span class="float-right bg-secondary rounded-lg">R$ 10,00</span>
+                        </h3>
+                        <p class="text-body">É tomado gelado com farinha de mandioca ou tapioca. <br> Mas é comum se comer o açaí em forma de pirão feito com farinha d’água, acompanhado de peixe assado ou camarão.</p>
+                        <hr>
+                        <h3 class="pt-3">
+                            <b class="text-body">Sorvete de Cupuaçu com Castanha do Pará</b>
+                            <span class="float-right bg-secondary rounded-lg">R$ 12,00</span>
+                        </h3>
+                        <p class="text-body">O cupuaçu é uma fruta bela, cheirosa, de sabor suave e ácido.</p>
+                        <hr>
+                        <h3 class="pt-3">
+                            <b class="text-body">Creme de Bacuri</b>
+                            <span class="float-right bg-secondary rounded-lg">R$ 10,00</span>
+                        </h3>
+                        <p class="text-body">uma das frutas mais populares da Região Norte do Brasil, possui sabor agridoce. </p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="container-fluid p-3 text-white sobre">
+            <h2 id="sobre">Sobre</h2>
+
+            <div class="container w-75" >
+                <p>Considerada uma das culinárias mais "brasileiras" do País, a gastronomia do Pará tem sim a cultura indígena como sua maior influência, mas também carrega consigo traços portugueses e africanos. Os elementos encontrados na região da Amazônia formam a base de seus pratos, com o acréscimo do camarão, caranguejo, pato e dos peixes, todos temperados com folhas e frutas nativas.</p>
+                <p><b>Melhor época para ir a Belém:</b> julho a novembro</p>
+                
+                <img src="https://novo.ufra.edu.br/images/ver-o-peso.jpg" alt="feira do ver o peso">
+               
+                <h3 class="pt-3">Horário de Funcionamento</h3>
+                
+                <div class="container d-flex pt-4">
+                    <div class="col">
+                        <p>Segunda e Terça <b>Fechado</b></p>
+                        <p>Quarta 10:00 - 16:00</p>
+                        <p>Quinta 10:00 - 16:00</p>  
+                    </div>
+                    <div class="col">
+                        <p>Sexta 10:00 - 23:00</p>
+                        <p>Sábado 10:00 - 23:00</p>
+                        <p>Domingo <b>Fechado</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <img src="https://s2.glbimg.com/wi8hbsjvIjAvTIApnibvPBRQsCU=/0x0:2000x1333/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/y/9/6Zz2MkR6yEICcidpf8lg/belem-para-foto-tarso-sarraf-0025.jpg" alt="feira do açaí">
+        </div>
+
+        <div class="contato pb-4">
+            <h2 id="contato">CONTATO</h2>
+
+            <div class="container w-75">
+                <p>Oferecemos aos nossos clientes o serviço de Delivery. <br> É só ligar e receber em sua casa nossos diversos pratos regionais.</p>
+                <a href="https://www.whatsapp.com/?lang=pt_br" target="blank" class="link"><i class="fab fa-whatsapp"></i> (55) 5555-5555</a>
+                <p>Reserve uma mesa, peça o cardadio especial do dia ou apenas mande um recado:</p>
+            </div>
+
+            <div class="container w-75">
+                <form action="javascript:alert( 'sucesso!' );" id="formReserva" class="form-contact" method="post" tabindex="1">
+                  <input type="text" class="form-contact-input" id="formNome" name="nome" placeholder="Nome" required />
+                  <input type="number" class="form-contact-input" name="number" placeholder="Quantas pessoas ?" required />
+                  <input type="datetime-local" class="form-contact-input" name="date" placeholder="Dia e Hora" value="2021-12-16T14:00" required />
+                  <input type="tel" class="form-contact-input" id="formTel" name="tel" placeholder="Telefone" />
+                  <textarea class="form-contact-textarea" name="conteudo" placeholder="Deixe uma mensagem"></textarea>
+                  
+                  <button type="submit" class="form-contact-button">Enviar</button>
+                </form>
+
+                <div id="mensagem" class="mt-2" role="alert"></div>    
+            </div>         
+        </div>
+    </main>
+
+    <footer class="container-fluid p-3 bg-dark text-white d-flex">
+        <div class="col d-flex justify-content-around flex-wrap align-content-center">
+            <a href="https://www.instagram.com/" target="blank" class="link"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://pt-br.facebook.com/"target="blank" class="link"><i class="fab fa-facebook-square"></i> Facebook</a>
+        </div>
+        <div class="col text-center  ">
+            <p class="align-text-bottom m-0">Desenvolvido por Amanda de Souza | 2021</p>
+            <p class="align-text-top">&copy; Todos os Direitos Reservados </p>
+        </div>
+    </footer>    
+</body>
+</html>
